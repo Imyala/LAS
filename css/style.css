@@ -723,6 +723,8 @@ p  { color: var(--clr-text-light); }
   transition: var(--transition);
 }
 .gallery-item:hover .gallery-item__zoom { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.gallery-item__zoom { color: var(--clr-primary); }
+.gallery-item__zoom svg { width: 22px; height: 22px; display: block; }
 
 /* Gallery filter buttons */
 .gallery-filters {
