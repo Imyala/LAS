@@ -581,8 +581,12 @@ p  { color: var(--clr-text-light); }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.9rem;
   margin: 0 auto 18px;
+}
+.why-card__icon svg {
+  width: 32px; height: 32px;
+  display: block;
+  color: var(--clr-primary);
 }
 .why-card h3 { margin-bottom: 10px; }
 
