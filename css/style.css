@@ -4,27 +4,27 @@
 
 /* ----- CSS Custom Properties ----- */
 :root {
-  --clr-primary: #1a5fa6;
-  --clr-primary-dark: #145090;
-  --clr-primary-light: #d0e8f7;
-  --clr-accent: #0892c5;
-  --clr-accent-dark: #0779a8;
-  --clr-ice: #eaf4fc;
+  --clr-primary: #2d74b8;
+  --clr-primary-dark: #245f97;
+  --clr-primary-light: #d7eafa;
+  --clr-accent: #1fb7c4;
+  --clr-accent-dark: #1798a3;
+  --clr-ice: #eef7fe;
   --clr-dark: #0d1e33;
   --clr-text: #1b2b3c;
   --clr-text-light: #5c6e80;
-  --clr-bg: #f5f8fc;
+  --clr-bg: #f8f9fe;
   --clr-white: #ffffff;
   --clr-grey-light: #edf1f7;
   --clr-grey: #d8e1ea;
   --clr-success: #27a87b;
   --clr-warning: #e98f3c;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.07);
-  --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.11);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.15);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 6px 18px rgba(24, 54, 87, 0.08);
+  --shadow-md: 0 14px 34px rgba(24, 54, 87, 0.12);
+  --shadow-lg: 0 24px 54px rgba(24, 54, 87, 0.16);
   --transition: 0.25s ease;
   --font-head: 'Montserrat', 'Segoe UI', sans-serif;
   --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
@@ -1041,14 +1041,14 @@ p  { color: var(--clr-text-light); }
 
 /* ----- Page Hero (shared) ----- */
 .page-hero {
-  background: linear-gradient(150deg, var(--clr-dark) 0%, var(--clr-primary) 100%);
+  background: linear-gradient(145deg, #183a5f 0%, var(--clr-primary) 52%, #4db7c5 100%);
   padding: 100px 0 60px;
   text-align: center;
 }
 .page-hero h1, .page-hero p { color: white; }
 .page-hero p { color: rgba(255,255,255,0.82); font-size: 1.08rem; }
 .breadcrumb {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 8px;
