@@ -7,8 +7,13 @@
 (function snowParticles() {
   const container = document.getElementById('snowParticles');
   if (!container) return;
-  const count = 28;
-  for (let i = 0; i < count; i++) {
+  const particleCount = 28;
+  const MIN_OPACITY = 0.15;
+  const OPACITY_RANGE = 0.5;
+  const MIN_DURATION = 8;
+  const DURATION_RANGE = 10;
+  const MAX_DELAY = 10;
+  for (let i = 0; i < particleCount; i++) {
     const p = document.createElement('div');
     p.className = 'snow-particle';
     const size = Math.random() * 3 + 2;
@@ -16,9 +21,9 @@
       `left: ${Math.random() * 100}%`,
       `width: ${size}px`,
       `height: ${size}px`,
-      `opacity: ${Math.random() * 0.5 + 0.15}`,
-      `animation-duration: ${Math.random() * 10 + 8}s`,
-      `animation-delay: ${Math.random() * 10}s`,
+      `opacity: ${Math.random() * OPACITY_RANGE + MIN_OPACITY}`,
+      `animation-duration: ${Math.random() * DURATION_RANGE + MIN_DURATION}s`,
+      `animation-delay: ${Math.random() * MAX_DELAY}s`,
     ].join(';');
     container.appendChild(p);
   }
