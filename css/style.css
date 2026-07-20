@@ -23,6 +23,9 @@
   --clr-grey:          #e2e8f0;
   --clr-success:       #10b981;
   --clr-warning:       #f59e0b;
+  --clr-sun:           #fde68a;   /* Warm yellow highlight */
+  --clr-sun-bright:    #fb923c;   /* Bright warm orange */
+  --clr-topbar-link:   #bfdbfe;   /* Light blue for topbar links */
   --radius-sm:  14px;
   --radius-md:  20px;
   --radius-lg:  28px;
@@ -284,7 +287,7 @@ p  { color: var(--clr-text-light); }
   padding: 8px 0;
   font-size: 0.82rem;
 }
-.topbar a { color: #bfdbfe; }
+.topbar a { color: var(--clr-topbar-link); }
 .topbar a:hover { color: var(--clr-white); }
 .topbar__inner {
   display: flex;
@@ -555,7 +558,7 @@ p  { color: var(--clr-text-light); }
 }
 .hero h1 { color: var(--clr-white); margin-bottom: 20px; }
 .hero h1 span {
-  background: linear-gradient(135deg, #fde68a, #fb923c, #fbbf24);
+  background: linear-gradient(135deg, var(--clr-sun), var(--clr-sun-bright), var(--clr-warning));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -575,7 +578,7 @@ p  { color: var(--clr-text-light); }
   font-family: var(--font-head);
   font-size: 2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #fde68a, #fb923c);
+  background: linear-gradient(135deg, var(--clr-sun), var(--clr-sun-bright));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -638,7 +641,7 @@ p  { color: var(--clr-text-light); }
 }
 .hero__card-service-icon svg { width: 1.2em; height: 1.2em; }
 .hero__card-service-text { font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.95); }
-.hero__card-service-arrow { margin-left: auto; color: #fde68a; font-size: 0.85rem; }
+.hero__card-service-arrow { margin-left: auto; color: var(--clr-sun); font-size: 0.85rem; }
 
 /* Decorative ice crystals in hero */
 .hero__flake {
