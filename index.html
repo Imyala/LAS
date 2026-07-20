@@ -21,6 +21,13 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero__bg"></div>
+  <div class="snow-particles" id="snowParticles"></div>
+  <!-- Decorative floating ice crystals -->
+  <span class="hero__flake" aria-hidden="true">❄</span>
+  <span class="hero__flake" aria-hidden="true">❆</span>
+  <span class="hero__flake" aria-hidden="true">❄</span>
+  <span class="hero__flake" aria-hidden="true">❅</span>
+  <span class="hero__flake" aria-hidden="true">❆</span>
   <div class="container hero__inner">
     <div class="hero__content">
       <div class="hero__badge">
@@ -82,6 +89,11 @@
 </section>
 
 <!-- ===== TRUST STRIP ===== -->
+<div class="wave-divider" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none" height="48" style="background:#0f3d6e;">
+    <path d="M0,32 C240,48 480,16 720,32 C960,48 1200,16 1440,32 L1440,48 L0,48 Z" fill="#eaf5ff"/>
+  </svg>
+</div>
 <div class="trust-strip">
   <div class="container">
     <div class="trust-strip__inner">
@@ -332,14 +344,15 @@
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:24px;">
-      <div style="background:var(--clr-dark);border-radius:16px;padding:36px;color:white;">
-        <div style="width:40px;height:40px;border-radius:8px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+      <div style="background:linear-gradient(135deg,#060e1a 0%,#0c2d56 50%,#0a6070 100%);border-radius:var(--radius-lg);padding:36px;color:white;position:relative;overflow:hidden;box-shadow:var(--shadow-lg);">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(14,200,216,0.2) 0%,transparent 60%);pointer-events:none;"></div>
+        <div style="width:40px;height:40px;border-radius:10px;background:rgba(14,200,216,0.18);border:1px solid rgba(14,200,216,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
-        <h3 style="color:white;margin-bottom:12px;">Did You Know?</h3>
-        <p style="color:rgba(255,255,255,0.78);">A dirty aircon can harbour up to <strong style="color:var(--clr-primary-light);">2 million</strong> colony-forming units of bacteria per unit — causing allergies, asthma flare-ups and even illness. Regular cleaning is essential for your family's health.</p>
+        <h3 style="color:white;margin-bottom:12px;position:relative;">Did You Know?</h3>
+        <p style="color:rgba(255,255,255,0.82);position:relative;">A dirty aircon can harbour up to <strong style="color:var(--clr-accent);">2 million</strong> colony-forming units of bacteria per unit — causing allergies, asthma flare-ups and even illness. Regular cleaning is essential for your family's health.</p>
       </div>
-      <div style="background:var(--clr-white);border:1px solid var(--clr-grey);border-radius:16px;padding:32px;">
+      <div style="background:var(--glass-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm);">
         <h3 style="margin-bottom:12px;">Ready for a Cleaner System?</h3>
         <p style="margin-bottom:20px;">Most cleans take just 45–90 minutes. Book online or call us today for an upfront quote.</p>
         <div class="btn-group">

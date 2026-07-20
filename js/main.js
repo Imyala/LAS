@@ -3,6 +3,32 @@
    ============================================================ */
 'use strict';
 
+/* ---------- Snow Particle Generator (hero) ---------- */
+(function snowParticles() {
+  const container = document.getElementById('snowParticles');
+  if (!container) return;
+  const particleCount = 28;
+  const MIN_OPACITY = 0.15;
+  const OPACITY_RANGE = 0.5;
+  const MIN_DURATION = 8;
+  const DURATION_RANGE = 10;
+  const MAX_DELAY = 10;
+  for (let i = 0; i < particleCount; i++) {
+    const p = document.createElement('div');
+    p.className = 'snow-particle';
+    const size = Math.random() * 3 + 2;
+    p.style.cssText = [
+      `left: ${Math.random() * 100}%`,
+      `width: ${size}px`,
+      `height: ${size}px`,
+      `opacity: ${Math.random() * OPACITY_RANGE + MIN_OPACITY}`,
+      `animation-duration: ${Math.random() * DURATION_RANGE + MIN_DURATION}s`,
+      `animation-delay: ${Math.random() * MAX_DELAY}s`,
+    ].join(';');
+    container.appendChild(p);
+  }
+})();
+
 /* ---------- Inject shared navigation ---------- */
 (function injectNav() {
   const topbar = `
