@@ -10,12 +10,12 @@
     <div class="container">
       <div class="topbar__inner">
         <div class="topbar__links">
-          <a href="tel:+61400000000">📞 0400 000 000</a>
-          <a href="mailto:info@lashvac.com">✉️ info@lashvac.com</a>
+          <a href="tel:+61400000000">0400 000 000</a>
+          <a href="mailto:info@lashvac.com">info@lashvac.com</a>
         </div>
         <div class="topbar__links">
-          <span>🕐 Mon–Fri 7am–5pm | Sat 8am–2pm</span>
-          <span>📍 Servicing all Brisbane &amp; surrounds</span>
+          <span>Mon–Fri 7am–5pm &nbsp;|&nbsp; Sat 8am–2pm</span>
+          <span>Brisbane &amp; surrounds</span>
         </div>
       </div>
     </div>
@@ -24,11 +24,13 @@
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const isActive = (page) => currentPage === page ? 'active' : '';
 
+  const snowflakeIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg>`;
+
   const navbar = `
   <nav class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo">
-        <div class="navbar__logo-icon">❄️</div>
+        <div class="navbar__logo-icon">${snowflakeIcon}</div>
         LAS<span>HVAC</span>
       </a>
       <div class="navbar__nav">
@@ -41,18 +43,10 @@
             </svg>
           </div>
           <div class="nav-dropdown__menu" id="servicesDropdownMenu">
-            <a href="services.html">
-              <span class="menu-icon">🔧</span> All Services
-            </a>
-            <a href="residential.html">
-              <span class="menu-icon">🏠</span> Residential
-            </a>
-            <a href="commercial.html">
-              <span class="menu-icon">🏢</span> Commercial
-            </a>
-            <a href="industrial.html">
-              <span class="menu-icon">🏭</span> Industrial / HVACR
-            </a>
+            <a href="services.html">All Services</a>
+            <a href="residential.html">Residential</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="industrial.html">Industrial / HVACR</a>
           </div>
         </div>
         <a href="gallery.html" class="${isActive('gallery.html')}">Gallery</a>
@@ -61,7 +55,7 @@
       </div>
       <div class="navbar__cta">
         <a href="contact.html" class="btn btn-outline-primary btn-sm">Get a Quote</a>
-        <a href="tel:+61400000000" class="btn btn-primary btn-sm">📞 Call Now</a>
+        <a href="tel:+61400000000" class="btn btn-primary btn-sm">Call Now</a>
       </div>
       <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -71,19 +65,19 @@
 
   <div class="navbar__mobile" id="mobileNav">
     <div class="mobile-section-title">Navigation</div>
-    <a href="index.html">🏠 Home</a>
+    <a href="index.html">Home</a>
     <div class="mobile-section-title">Services</div>
-    <a href="services.html">🔧 All Services</a>
-    <a href="residential.html">🏠 Residential Cleaning</a>
-    <a href="commercial.html">🏢 Commercial Cleaning</a>
-    <a href="industrial.html">🏭 Industrial / HVACR</a>
+    <a href="services.html">All Services</a>
+    <a href="residential.html">Residential Cleaning</a>
+    <a href="commercial.html">Commercial Cleaning</a>
+    <a href="industrial.html">Industrial / HVACR</a>
     <div class="mobile-section-title">Company</div>
-    <a href="gallery.html">📷 Gallery</a>
-    <a href="about.html">👥 About Us</a>
-    <a href="contact.html">📩 Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
     <div class="mobile-cta">
       <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-      <a href="tel:+61400000000" class="btn btn-outline-primary">📞 0400 000 000</a>
+      <a href="tel:+61400000000" class="btn btn-outline-primary">0400 000 000</a>
     </div>
   </div>`;
 
@@ -93,13 +87,14 @@
 
 /* ---------- Inject shared footer ---------- */
 (function injectFooter() {
+  const snowflakeIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg>`;
   const footer = `
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="index.html" class="footer__logo">
-            <div class="footer__logo-icon">❄️</div>
+            <div class="footer__logo-icon">${snowflakeIcon}</div>
             LAS<span>HVAC</span>
           </a>
           <p class="footer__desc">
@@ -108,8 +103,8 @@
             Breathe clean, breathe healthy.
           </p>
           <div class="footer__socials">
-            <a href="#" class="footer__social" aria-label="Facebook">f</a>
-            <a href="#" class="footer__social" aria-label="Instagram">📸</a>
+            <a href="#" class="footer__social" aria-label="Facebook">Fb</a>
+            <a href="#" class="footer__social" aria-label="Instagram">Ig</a>
             <a href="#" class="footer__social" aria-label="Google">G</a>
           </div>
         </div>
@@ -117,39 +112,39 @@
         <div>
           <div class="footer__heading">Services</div>
           <div class="footer__links">
-            <a href="residential.html">🏠 Residential Aircon Cleaning</a>
-            <a href="commercial.html">🏢 Commercial Aircon Cleaning</a>
-            <a href="industrial.html">🏭 Industrial / HVACR</a>
-            <a href="services.html">🔧 View All Services</a>
+            <a href="residential.html">Residential Aircon Cleaning</a>
+            <a href="commercial.html">Commercial Aircon Cleaning</a>
+            <a href="industrial.html">Industrial / HVACR</a>
+            <a href="services.html">View All Services</a>
           </div>
         </div>
 
         <div>
           <div class="footer__heading">Company</div>
           <div class="footer__links">
-            <a href="about.html">👥 About Us</a>
-            <a href="gallery.html">📷 Gallery</a>
-            <a href="contact.html">📩 Get a Quote</a>
-            <a href="contact.html">📞 Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Get a Quote</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
 
         <div>
           <div class="footer__heading">Contact</div>
           <div class="footer__contact-item">
-            <span class="footer__contact-icon">📞</span>
+            <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.91-1.83a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 14v2.92z"/></svg></span>
             <div class="footer__contact-text"><a href="tel:+61400000000">0400 000 000</a></div>
           </div>
           <div class="footer__contact-item">
-            <span class="footer__contact-icon">✉️</span>
+            <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
             <div class="footer__contact-text"><a href="mailto:info@lashvac.com">info@lashvac.com</a></div>
           </div>
           <div class="footer__contact-item">
-            <span class="footer__contact-icon">📍</span>
+            <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
             <div class="footer__contact-text">Brisbane &amp; Surrounds, QLD, Australia</div>
           </div>
           <div class="footer__contact-item">
-            <span class="footer__contact-icon">🕐</span>
+            <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
             <div class="footer__contact-text">Mon–Fri 7am–5pm<br>Sat 8am–2pm</div>
           </div>
         </div>
@@ -168,7 +163,7 @@
   <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
 
   <div class="sticky-quote">
-    <a href="tel:+61400000000" class="sticky-quote__btn sticky-quote__btn--phone">📞 Call Now</a>
+    <a href="tel:+61400000000" class="sticky-quote__btn sticky-quote__btn--phone">Call Now</a>
     <a href="contact.html" class="sticky-quote__btn">Get a Quote</a>
   </div>`;
 
@@ -272,25 +267,6 @@
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-})();
-
-/* ---------- Hero particle effect ---------- */
-(function heroParticles() {
-  const container = document.querySelector('.hero__particles');
-  if (!container) return;
-  const count = 18;
-  for (let i = 0; i < count; i++) {
-    const p = document.createElement('div');
-    p.className = 'hero__particle';
-    const size = 8 + Math.random() * 20;
-    p.style.cssText = `
-      width: ${size}px; height: ${size}px;
-      left: ${Math.random() * 100}%;
-      animation-duration: ${8 + Math.random() * 14}s;
-      animation-delay: ${Math.random() * -20}s;
-    `;
-    container.appendChild(p);
-  }
 })();
 
 /* ---------- FAQ accordion ---------- */
