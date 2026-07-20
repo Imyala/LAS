@@ -10,14 +10,18 @@ This folder holds all the photos for the LAS website.
 
 ## Recommended Photo Names
 
+> **Note:** The service photos below are already in place across the homepage,
+> services page and each service sub-page. Swap any file for your own photo of
+> the same name to update it everywhere it's used.
+
 | File Name | Used On | Description |
 |---|---|---|
-| `residential.jpg` | index.html (service card) | General residential aircon photo |
-| `commercial.jpg` | index.html (service card) | General commercial aircon photo |
-| `industrial.jpg` | index.html (service card) | General industrial HVAC photo |
-| `residential-hero.jpg` | residential.html | Hero image for residential page |
-| `commercial-hero.jpg` | commercial.html | Hero image for commercial page |
-| `industrial-hero.jpg` | industrial.html | Hero image for industrial page |
+| `residential.jpg` | index.html + services.html (service cards) | ✅ Added – residential condenser units |
+| `commercial.jpg` | index.html + services.html (service cards) | ✅ Added – commercial VRV system |
+| `industrial.jpg` | index.html + services.html (service cards) | ✅ Added – industrial rooftop chillers |
+| `residential-hero.jpg` | residential.html | ✅ Added – split systems hero |
+| `commercial-hero.jpg` | commercial.html | ✅ Added – commercial chiller plant hero |
+| `industrial-hero.jpg` | industrial.html | ✅ Added – cooling tower hero |
 | `about-team.jpg` | about.html | Team or founder photo |
 | `luke.jpg` | about.html | Luke's headshot |
 | `split-system.jpg` | residential.html | Split system unit photo |
