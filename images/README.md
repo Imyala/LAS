@@ -1,6 +1,6 @@
-# Adding Your Images to the LAS Website
+# Adding Your Images to the Cold Circuit Website
 
-This folder holds all the photos for the LAS website.
+This folder holds all the photos for the Cold Circuit website.
 
 ## How to Add Your Photos
 
@@ -53,7 +53,7 @@ Find this in the HTML:
 
 Replace it with:
 ```html
-<img src="images/residential.jpg" alt="Residential aircon cleaning by LAS Brisbane">
+<img src="images/residential.jpg" alt="Residential aircon cleaning by Cold Circuit Brisbane">
 ```
 
 ## Supported Formats

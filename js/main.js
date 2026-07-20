@@ -1,5 +1,5 @@
 /* ============================================================
-   LAS – Luke's Aircon Services  |  main.js
+   Cold Circuit  |  main.js
    ============================================================ */
 'use strict';
 
@@ -37,7 +37,7 @@
       <div class="topbar__inner">
         <div class="topbar__links">
           <a href="tel:+61400000000">0400 000 000</a>
-          <a href="mailto:info@lashvac.com">info@lashvac.com</a>
+          <a href="mailto:info@coldcircuit.com.au">info@coldcircuit.com.au</a>
         </div>
         <div class="topbar__links">
           <span>Mon–Fri 7am–5pm &nbsp;|&nbsp; Sat 8am–2pm</span>
@@ -57,7 +57,7 @@
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo">
         <div class="navbar__logo-icon">${snowflakeIcon}</div>
-        LAS<span>HVAC</span>
+        Cold<span>Circuit</span>
       </a>
       <div class="navbar__nav">
         <a href="index.html" class="${isActive('index.html')}">Home</a>
@@ -121,10 +121,10 @@
         <div class="footer__brand">
           <a href="index.html" class="footer__logo">
             <div class="footer__logo-icon">${snowflakeIcon}</div>
-            LAS<span>HVAC</span>
+            Cold<span>Circuit</span>
           </a>
           <p class="footer__desc">
-            Luke's Aircon Services – your trusted specialists in residential, commercial,
+            Cold Circuit – your trusted specialists in residential, commercial,
             and industrial air conditioning cleaning across Brisbane and surrounding regions.
             Breathe clean, breathe healthy.
           </p>
@@ -163,7 +163,7 @@
           </div>
           <div class="footer__contact-item">
             <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-            <div class="footer__contact-text"><a href="mailto:info@lashvac.com">info@lashvac.com</a></div>
+            <div class="footer__contact-text"><a href="mailto:info@coldcircuit.com.au">info@coldcircuit.com.au</a></div>
           </div>
           <div class="footer__contact-item">
             <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
@@ -177,7 +177,7 @@
       </div>
 
       <div class="footer__bottom">
-        <div>© ${new Date().getFullYear()} LAS – Luke's Aircon Services. All rights reserved.</div>
+        <div>© ${new Date().getFullYear()} Cold Circuit. All rights reserved.</div>
         <div class="footer__bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
