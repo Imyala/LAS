@@ -1743,3 +1743,19 @@ p  { color: var(--clr-text-light); }
 @media (max-width: 768px) {
   .pay-grid { grid-template-columns: 1fr; }
 }
+
+/* ----- Footer apps + text social chips ----- */
+.footer__social--txt { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.3px; }
+.footer__apps { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.footer__apps-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px;
+  color: rgba(255,255,255,0.45); font-weight: 700; margin-right: 2px;
+}
+.footer__app {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14);
+  padding: 6px 12px; border-radius: 50px; transition: var(--transition); text-decoration: none;
+}
+.footer__app::before { content: '📲'; font-size: 0.85rem; }
+.footer__app:hover { background: linear-gradient(135deg, var(--clr-accent), var(--clr-primary)); color: #fff; border-color: transparent; }

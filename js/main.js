@@ -40,8 +40,8 @@
           <a href="mailto:info@coldcircuit.com.au">info@coldcircuit.com.au</a>
         </div>
         <div class="topbar__links">
-          <span>Mon–Fri 7am–5pm &nbsp;|&nbsp; Sat 8am–2pm</span>
-          <span>Brisbane &amp; surrounds</span>
+          <span>Open 7 days 6am–6pm &nbsp;|&nbsp; After-hours 6pm–2am</span>
+          <span>Logan · Brisbane · Gold Coast</span>
         </div>
       </div>
     </div>
@@ -124,14 +124,21 @@
             Cold<span>Circuit</span>
           </a>
           <p class="footer__desc">
-            Cold Circuit – your trusted specialists in residential, commercial,
-            and industrial air conditioning cleaning across Brisbane and surrounding regions.
+            Cold Circuit – your trusted specialist in residential, commercial,
+            and industrial air conditioning cleaning across Logan, Brisbane and the Gold Coast.
             Breathe clean, breathe healthy.
           </p>
           <div class="footer__socials">
             <a href="#" class="footer__social" aria-label="Facebook">Fb</a>
             <a href="#" class="footer__social" aria-label="Instagram">Ig</a>
             <a href="#" class="footer__social" aria-label="Google">G</a>
+            <a href="#" class="footer__social" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="footer__social footer__social--txt" aria-label="XRP">XRP</a>
+          </div>
+          <div class="footer__apps">
+            <span class="footer__apps-label">Our apps</span>
+            <a href="#" class="footer__app">RefrigHandle</a>
+            <a href="#" class="footer__app">RefrigLeer</a>
           </div>
         </div>
 
@@ -150,8 +157,8 @@
           <div class="footer__links">
             <a href="about.html">About Us</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Get a Quote</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="contact.html">Contact &amp; Quotes</a>
           </div>
         </div>
 
@@ -167,11 +174,11 @@
           </div>
           <div class="footer__contact-item">
             <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <div class="footer__contact-text">Brisbane &amp; Surrounds, QLD, Australia</div>
+            <div class="footer__contact-text">Logan · Brisbane · Gold Coast, QLD</div>
           </div>
           <div class="footer__contact-item">
             <span class="footer__contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-            <div class="footer__contact-text">Mon–Fri 7am–5pm<br>Sat 8am–2pm</div>
+            <div class="footer__contact-text">Open 7 days 6am–6pm<br>After-hours 6pm–2am</div>
           </div>
         </div>
       </div>
