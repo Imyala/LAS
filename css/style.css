@@ -1759,3 +1759,17 @@ p  { color: var(--clr-text-light); }
 }
 .footer__app::before { content: '📲'; font-size: 0.85rem; }
 .footer__app:hover { background: linear-gradient(135deg, var(--clr-accent), var(--clr-primary)); color: #fff; border-color: transparent; }
+
+/* ----- Did You Know – source citation ----- */
+.dyk-source {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.78rem;
+  margin-top: 14px;
+  position: relative;
+}
+.dyk-source a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.dyk-source a:hover { color: #fff; }
